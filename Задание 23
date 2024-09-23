@@ -1,0 +1,32 @@
+integer_var=66
+fioat_var=52.666
+string_var= ("zooov")
+list_var=(1,2,3,4)
+tuple_var=(15,40)
+dict_var={}
+dict_var={"name": "poco", "age": 666}
+set_var={1,2,3}
+booi_var= True
+print(integer_var)
+print(float)
+print(string_var)
+print(list_var)
+print(tuple_var)
+print(dict_var)
+print(set_var)
+print(bool)
+задание 2
+name="Poco"
+age=999
+average_grade="4,4"
+favorite_movies=["Hobbit","terminator","predator"]
+perconal_info=("Oboyshev",1360,4.4)
+skills={"вроде нормальный": "средний","мастер спорта по сну":"хорошо", "играю на поко в бравл старс": "хорошо"}
+visited_countries=["Испания","Болгария","Россия"]
+has_driver_license= False
+#задание 3
+string_var="AMD Athlon 200GE OEM"
+integer_var=64
+speed= 550 
+list=["integer_var","string_var","speed"]
+print(list)
