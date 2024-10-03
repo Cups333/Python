@@ -1,0 +1,18 @@
+#задание1
+name1 = int(input("введите ваш возраст"))
+name2 = int(input("Введите возраст друга"))
+print(name1+name2)
+#задание 2
+z = (input("Имя"))
+v = (input("Фамилия"))
+print("привет", z+v)
+#задание 3
+z1 = input()
+z2 = input()
+z3 = input()
+print("1. {}\n2. {}\n3. {}" .format( z1, z2, z3))
+#задание 4
+print("***\n* *\n***")
+#задание 5
+x = int(input("Введите число x: "))
+print(f"{x-3} {x-2} {x-1}\n{x}\n{x+3} {x+2} {x+1}")
