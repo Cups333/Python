@@ -1,0 +1,137 @@
+#Задание1
+x = int(input("Введите ваш возраст: "))
+if x < 18:
+    print("Вы несовершеннолетний")
+elif 18 <= x <= 65:
+    print("Вы трудоспособный")
+else:
+    print("Вы пенсионер")
+#Задание2
+cost = int(input("Введите стоимость покупки: "))
+if cost < 1000:
+print("скидка не предоставляется")
+elif 1000 <= cost<= 5000:
+print("скидка 5%")
+else:
+print("скидка 10%")
+#Задание3
+def main():
+ """Запрашивает у пользователя два числа и операцию, затем выводит результат вычисления."""
+num1 = float(input("Введите первое число: "))
+num2 = float(input("Введите второе число: "))
+operation = input("Введите операцию (+, -, *, /): ")
+if operation == "+":
+result = num1 + num2
+elif operation == "-":
+result = num1 - num2
+elif operation == "*":
+result = num1 * num2
+elif operation == "/":
+if num2 == 0:
+print("Деление на ноль!")
+return
+else:
+result = num1 / num2
+else:
+print("Некорректная операция")
+return
+print(f"Результат: {result}")
+if name == "__main__":
+main()
+#Задание4
+num0 = int(input("введите число: "))
+
+if num0 %2 == 0 and (str(num0).endswith('2') or str(num0).endswith('6')):
+    print("True")
+else:
+    print("False")
+#Задание5
+password = 228
+n = int(input("введите пароль: "))
+if n == password:
+    print("доступ разрешен")
+else:
+    print("неверный пароль")
+#Задание6
+x = input("Введите координаты квадрата: ")
+if x == "B1" or x == "B3" or x == "B7"  or x == "C1" or x == "C4" or x == "C5" or x == "C6" or x == "C8" or x == "C9":
+    print("В данном квадрате обитает синий попугай")
+elif x == "B2" or x == "B4" or x == "B6" or x == "B8" or x == "C2" or x == "C7" or x == "C10" or x == "C11":
+    print ("В данном квадрате обитает зеленый попугай")
+elif x == "B5" or x == "C3" or x == "C12":
+    print("пустой, на нём никто не сидит")
+
+#Задание 7 
+n = int(input("введите число n: "))
+k = int(input("введите число k: "))
+if k == 0:
+    print("на ноль делить нельзя")
+else:
+    if n % k == 0:
+        print(f"{n} кратно {k}")
+    else:
+        print(f"{n} не кратно {k}")
+
+#Задание 8
+level = int(input("Введите уровень игрока: "))
+health = int(input("Введите уровень здоровья игрока: "))
+
+# Проверка корректности данных
+if level < 0 or health > 100:
+    print("Некорректные данные.")
+else:
+    # Проверка уровня
+    if level < 5:
+        print("Ваш уровень слишком низкий для выполнения миссии.")
+    else:
+        # Проверка здоровья
+        if health > 50:
+            print("Вы готовы к миссии!")
+        elif health >= 20:
+            print("Ваше здоровье низкое, будьте осторожны.")
+        else:
+            print("Ваше здоровье слишком низкое для выполнения миссии.")
+#Задание 9
+inventory = ["яблоко", "шариковая ручка"]
+
+# Проверяем наличие ключа и фонаря
+if "ключ" in inventory and "фонарь" in inventory:
+  print("Вы можете пройти через дверь.")
+elif "ключ" not in inventory:
+  print("У вас нет ключа, вы не можете открыть дверь.")
+elif "фонарь" not in inventory:
+  print("У вас нет фонаря, слишком темно, чтобы пройти.")
+else:
+  print("У вас нет ни ключа, ни фонаря, вы не можете пройти через дверь.")
+#Задание10
+king = "Enemies are coming! Are the archers ready?"
+warrior = "For the Alliance!"
+magician = "The spell is ready."
+
+# Проверка наличия знаков ?!. в конце фраз
+if king.endswith("?"):
+  print(f"{king} - Вопросительное предложение")
+elif king.endswith("!"):
+  print(f"{king} - Восклицательное предложение")
+elif king.endswith("."):
+  print(f"{king} - Повествовательное предложение")
+else:
+  print(f"{king} - Некорректное предложение")
+
+if warrior.endswith("?"):
+  print(f"{warrior} - Вопросительное предложение")
+elif warrior.endswith("!"):
+  print(f"{warrior} - Восклицательное предложение")
+elif warrior.endswith("."):
+  print(f"{warrior} - Повествовательное предложение")
+else:
+  print(f"{warrior} - Некорректное предложение")
+
+if magician.endswith("?"):
+  print(f"{magician} - Вопросительное предложение")
+elif magician.endswith("!"):
+  print(f"{magician} - Восклицательное предложение")
+elif magician.endswith("."):
+  print(f"{magician} - Повествовательное предложение")
+else:
+  print(f"{magician} - Некорректное предложение")
