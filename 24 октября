@@ -1,0 +1,90 @@
+#Задание 1
+names = ["Richard", "Igor", "Jonathan", "Alice", "Mary", "Bonnie"]
+for name in names:
+ print(f"Hello {name}!")
+#Задание 2
+phrase = "I'm learning cycles."
+
+for i in range(10):
+ print(phrase)
+#Задание 3
+stations = ["Малиновка", "Рябиновка", "Суслово", "Дрожжино", "Звягино"]
+
+for i, station in enumerate(stations):
+ print(f"Поезд на станции: {station}")
+ if i == len(stations) - 1:
+  print("Конечная!")
+#Задание 5
+tasks = ["Сдать проект (Важная)", "Сходить в магазин", "Позвонить врачу (Важная)", "Убраться в комнате", "Подготовить отчёт"]
+
+for i, task in enumerate(tasks, 1): 
+ if "Важная" in task:
+  print(f"{i}!: {task}")
+ else:
+  print(f"{i}: {task}")
+#Задание 4
+shop = ["Laptop", "Smartphone", "Watch", "Tablet", "Headphones"]
+for item in shop:
+ if item == "Laptop":
+  print("I'm buying this.")
+ else:
+  print("I don't need it.")
+#Задание 7
+i = 1  
+while i <= 10: 
+  print(f"Цикл сработал {i} раз")
+  i += 1  
+#Задание 8
+while True:
+ command = input("Введите команду (w, a, s, d, stop): ")
+
+ if command == "w":
+  print("Персонаж идёт вперёд.")
+ elif command == "a":
+  print("Персонаж идёт влево.")
+ elif command == "s":
+  print("Персонаж идёт назад.")
+ elif command == "d":
+  print("Персонаж идёт вправо.")
+ elif command == "stop":
+  print("Программа остановленак.")
+  break 
+ else:
+  print("Неизвестная команда! Попробуйте снова.")
+#Задание 9
+while True:
+  number = int(input("Введите число от 1 до 9: "))
+  if 1 <= number <= 9:
+    break
+  else:
+    print("Некорректный ввод. Попробуйте снова.")
+
+for i in range(1, 11):
+  print(f"{number} x {i} = {number * i}")
+#Задание 10
+ загадка = "висит груша нельзя скушать?"
+ответ = "лампочка"
+attempts = 3
+print(загадка)
+while attempts > 0:
+ user_answer = input("Введите ваш ответ: ")
+ if user_answer == ответ:
+  print("Правильно! Вы отгадали загадку!")
+  break
+ else:
+  attempts -= 1
+  print(f"Неверно. Осталось попыток: {attempts}")
+if attempts == 0:
+ print(f"Вы исчерпали все попытки. Правильный ответ: {ответ}")
+#Задание 6
+count = int(input("Ввелите кол-во чисел"))
+numbers = []
+sum = 0
+
+for i in range(count):
+ number = int(input(f"Введите число {i+1}: "))
+ numbers.append(number)
+ sum += number
+
+print(f"Список введённых чисел: {numbers}")
+print(f"Сумма чисел: {sum}")
