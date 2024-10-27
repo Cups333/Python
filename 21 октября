@@ -1,0 +1,28 @@
+#Задание 1
+string = input("Введите строку:")
+if len(string)==0:
+    print(None)
+elif len(string)<=5:
+    print("short")
+elif 6 <= len(string)<=10:
+    print("normal")
+else:
+    print("long")
+#Задание2
+num = int(input("Введите чило:"))
+if num<0:
+    num=1_000_000
+    print(num)
+elif num==0:
+    num=2
+    print(num**2)
+else:
+    print(num**3)
+#Задание3
+number_1=10
+number_2=100
+user_num=int(input("Введите число:"))
+if number_1<user_num<number_2:
+    print(True)
+else:
+    print(False)
