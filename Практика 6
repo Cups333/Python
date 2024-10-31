@@ -64,3 +64,16 @@ for index, row in enumerate(random_elements):
     for inner_index, element in enumerate(row):
         if inner_index % 2 == 1:
             print(f"Индекс: {index}, Элемент: {element}")
+#Задание 5
+rows= int(input("Введите количество строк:"))
+cols= int(input("Введите количество столбцов:"))
+matrix=[]
+for i in range (rows):
+    row=[]
+    for j in range (cols):
+        value= int(input("Введите значения элемента [{i}][{j}]:"))
+        row.append(value)
+        matrix.append(row)
+print("Ваш двумерный массив:")
+for row in matrix:
+    print(row)
