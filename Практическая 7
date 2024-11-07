@@ -1,0 +1,77 @@
+# Задание 1
+print("Начальный список:")
+for row in table:
+    print(row)
+
+for row in table:
+    while 'folder' in row:
+        row.remove('folder')
+    if 'data.accdb' in row:
+        row[row.index('data.accdb')] = 'data.sql'
+
+print("\nБез папок и с заменой data:")
+for row in table:
+    print(row)
+
+py_files = []
+for row in table:
+    py_files.extend([file for file in row if file.endswith('.py')])
+
+print("\nВсе файлы .py:")
+print(py_files)
+
+js_files = []
+for row in table:
+    js_files.extend(['new_' + file for file in row if file.endswith('.js')])
+
+print("\nВсе new_файлы.js:")
+print(js_files)
+
+# Задание 2
+word_numb = ["ноль", "один", "два", "три", "четыре", "пять", "шесть", "семь", "восемь", "девять"]
+
+n = int(input("Введите число от 0 до 9: "))
+if 0 <= n <= 9:
+    print(word_numb[:n + 1])
+else:
+    print('Введите число <= 9')
+
+# Задание 3
+bin_sy = ['11011111', '11011101', '11000111', '11011100', '11011110']
+decimals = [int(b, 2) for b in bin_sy]
+
+print("\nДесятичные числа:")
+for dec in decimals:
+    print(dec)
+
+print("Максимум:", max(decimals))
+print("Минимум:", min(decimals))
+
+# Задание 4
+A = [
+    [-446, 281, -80],
+    [465, 432, -122],
+    [13, 'error', 8]
+]
+
+for i, row in enumerate(A):
+    for j, value in enumerate(row):
+        if isinstance(value, str):
+            A[i][j] = len(value)
+
+
+matrix_sum = sum(sum(row) for row in A)
+print("\nОбновленная матрица:")
+for row in A:
+    print(row)
+
+print("Сумма всех элементов матрицы:", matrix_sum)
+# Задание 5
+matrix = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
+diagonal_sum = sum(matrix[i][len(matrix) - 1 - i] for i in range(len(matrix)))
+
+print("\nСумма по диагонали справа налево:", diagonal_sum)
