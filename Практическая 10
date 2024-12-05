@@ -1,0 +1,58 @@
+#Задание 1
+def upper(t: str) -> str:
+    out = ""
+    for i in t:
+        if i.isupper():
+            out += i
+    return out
+
+
+print(upper("PrIVet"))
+#Задание 2
+def punct(txt: str) -> int:
+    a = "!?.,()"
+    out = 0
+    for i in txt:
+        if i in a:
+            out += 1
+    return out
+
+
+print(punct("(Как дела, друг?)"))
+#Задание 3
+def create_cube(x: int, y: int):
+    for i in range(y):
+        print("*" * x)
+
+
+create_cube(5, 3)
+#Задание 4
+def double(string: str) -> str:
+    out = ""
+    for i in string:
+        out += i * 2
+    print(out)
+
+
+double("строка")
+#Задание 5
+def constructor(a: int, b: int, c: int, d: int) -> int:
+    a = a // 72
+    b = b // 4
+    c = c // 2
+    d = d // 7
+    return min(a, b, c, d)
+print(constructor(144, 8, 4, 14))
+#Задание 6
+def cust_filter(inp: list) -> bool:
+    summ = 0
+    for i in inp:
+        if isinstance(i, int) and i % 7 == 0:
+            summ += i
+    if summ < 83:
+        return True
+    else:
+        return False
+
+
+print(cust_filter([7, 10.5, "txt", 14, 2, 56]))
